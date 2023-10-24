@@ -1,14 +1,16 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 
 /**
  * _strpbrk - Searches a string for any of a set of bytes.
  *
  * @s: The string value.
  * @accept: The substring value.
- * Return: s (accept) or NULL.
+ * Return: 
  */
+
 char *_strpbrk(char *s, char *accept)
+
 {
 	int a, b;
 
