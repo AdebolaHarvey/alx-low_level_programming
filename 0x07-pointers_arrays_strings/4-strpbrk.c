@@ -3,23 +3,21 @@
 
 /**
  * _strpbrk - Searches a string for any of a set of bytes.
- *
- * @s: The string value.
- * @accept: The substring value.
- * Return: 
+ * @s: input value.
+ * @accept: input value.
+ * Return: s or NULL.
  */
 
 char *_strpbrk(char *s, char *accept)
-
 {
-	int a, b;
+	int i, n;
 
-	for (a = 0; s[a] != '\0'; a++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (b = 0; accept[a] != '\0'; a++)
+		for (n = 0; accept[n] != '\0'; n++)
 		{
-			if (s[a] == accept[b])
-				return (s + b);
+			if (s[i] == accept[n])
+				return (s + i);
 		}
 	}
 
