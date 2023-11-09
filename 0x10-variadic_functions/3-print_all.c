@@ -96,4 +96,4 @@ void print_the_char_ptr(char *separator, va_list args)
 	}
 
 	printf("%s%s", separator, arg);
-}	
+}
