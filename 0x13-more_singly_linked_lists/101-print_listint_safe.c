@@ -2,7 +2,6 @@
 #include <stdio.h>
 
 size_t looping_listint_len(const listint_t *head);
-size_t print_listint_safe(const listint_t *head);
 
 /**
  * looping_listint_len - .....
