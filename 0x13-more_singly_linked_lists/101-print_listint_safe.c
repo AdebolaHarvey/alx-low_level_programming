@@ -12,7 +12,7 @@ size_t looping_listint_len(const listint_t *head);
 size_t looping_listint_len(const listint_t *head)
 {
 	const listint_t *t, *h;
-	size_t n = 1;
+	size_t nd = 1;
 
 	if (head == NULL || head->next == NULL)
 		return (0);
@@ -27,7 +27,7 @@ size_t looping_listint_len(const listint_t *head)
 			t = head;
 			while (t != h)
 			{
-				n++;
+				nd++;
 				t = t->next;
 				h = h->next;
 			}
@@ -35,11 +35,11 @@ size_t looping_listint_len(const listint_t *head)
 			t = t->next;
 			while (t != h)
 			{
-				n++;
+				nd++;
 				t = t->next;
 			}
 
-			return (n);
+			return (nd);
 		}
 
 		t = t->next;
