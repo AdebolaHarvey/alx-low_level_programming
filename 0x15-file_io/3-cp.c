@@ -6,6 +6,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+void file_error(int file_from, int file_to, char *argv[]);
+
 /**
  * file_error - Checks if file can be opened.
  * @file_from: First file.
